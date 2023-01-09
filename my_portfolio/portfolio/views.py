@@ -5,8 +5,11 @@ from wsgiref.util import FileWrapper
 import mimetypes
 import os
 
-
+number_of_views = {
+    'views': 0
+}
 def index_view(request):
+
     if request.method == 'POST':
         name = request.POST.get('full-name')
         email = request.POST.get('email')
@@ -26,10 +29,10 @@ def index_view(request):
         send_mail(subject, message, '', ['reni91boyanova@gmail.com'])
         return redirect('index page')
     else:
-        request.session['view_counter'] +=1
+        number_of_views['views'] += 1
 
     context = {
-        'number_of_views': request.session['view_counter']
+        'number_of_views': number_of_views['views']
     }
 
     return render(request, 'index.html', context)
