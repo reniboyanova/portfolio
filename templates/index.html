@@ -1,0 +1,933 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Reni Boyanova | Portfolio page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static '/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="{% static '/css/johndoe.css' %}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+{#<a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i#}
+{#        class="ti-shift-left-alt"></i> Components</a>#}
+<header class="header">
+    <div class="container">
+        <ul class="social-icons pt-3">
+            {#                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>#}
+            <li class="social-item"><a class="social-link text-light" href="tel:+359898443064"><i class="ti-mobile"
+                                                                                                  aria-hidden="true"></i></a>
+            </li>
+            <li class="social-item"><a class="social-link text-light" href="mailto: reni91boyanova@gmail.com"><i
+                    class="ti-email" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light"
+                                       href="https://www.linkedin.com/in/reni-boyanova-a8763b253/"><i
+                    class="ti-linkedin" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link text-light" href="https://github.com/reniboyanova"><i
+                    class="ti-github" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="header-content">
+            <h4 class="header-subtitle">Hello, I am</h4>
+            <h1 class="header-title">Reni Boyanova</h1>
+            <h6 class="header-mono">Python Developer | Front end & Back end</h6>
+            <a href="{% url 'download resume' %}"><button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Download Resume</button></a>
+        </div>
+    </div>
+</header>
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+    <div class="container">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav brand">
+                <img src="{% static '/imgs/avatar1.jpg' %}" alt="" class="brand-img">
+                <li class="brand-txt">
+                    <h5 class="brand-title">Reni Boyanova</h5>
+                    <div class="brand-subtitle">Python Developer | Front end & Back end</div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                {#                    <li class="nav-item">#}
+                {#                        <a href="#blog" class="nav-link">Blog</a>#}
+                {#                    </li>#}
+                <li class="nav-item last-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div id="about" class="row about-section">
+        <div class="col-lg-4 about-card">
+            <h3 class="font-weight-light">Who am I ?</h3>
+            <span class="line mb-5"></span>
+            <h5 class="mb-3">A Python Web Developer / Purposeful person</h5>
+            <p class="mt-20">I am a person who likes to constantly learn new things and develop. Challenges don't weigh
+                me down.
+                I know how to get along easily in the team I work in, as well as manage a team of people when needed.
+                I like to challenge myself and prove to myself that difficulties are a way to grow.</p>
+            <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+        </div>
+        <div class="col-lg-4 about-card">
+            <h3 class="font-weight-light">Personal Info</h3>
+            <span class="line mb-5"></span>
+            <ul class="mt40 info list-unstyled">
+                <li><span>Birthdate</span> : 08/08/1991</li>
+                <li><span>Email</span> : reni91boyanova@gmail.com</li>
+                <li><span>Phone</span> : + 359 898 44 30 64</li>
+                <li><span>Discord</span> : Reni Boyanova#3969</li>
+                <li><span>Address</span> : Varna, Bulgaria</li>
+            </ul>
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link" href="tel:+359898443064"><i class="ti-mobile"
+                                                                                           aria-hidden="true"></i></a>
+                </li>
+                <li class="social-item"><a class="social-link" href="mailto: reni91boyanova@gmail.com"><i
+                        class="ti-email" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link"
+                                           href="https://www.linkedin.com/in/reni-boyanova-a8763b253/"><i
+                        class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link" href="https://github.com/reniboyanova"><i
+                        class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4 about-card">
+            <h3 class="font-weight-light">My Expertise</h3>
+            <span class="line mb-5"></span>
+            <div class="row">
+                <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                <div class="col-10 ml-auto mr-3">
+                    <h6>Digital Marketing Specialist</h6>
+                    <p class="subtitle"> Social media, content creation, paid campaigns, etc.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 text-danger pt-1"><i class="ti-face-smile icon-lg"></i></div>
+                <div class="col-10 ml-auto mr-3">
+                    <h6>Team Manager</h6>
+                    <p class="subtitle">Regional Sales manager in collective shopping site.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1 text-danger pt-1"><i class="ti-bar-chart icon-lg"></i></div>
+                <div class="col-10 ml-auto mr-3">
+                    <h6>Small business owner</h6>
+                    <p class="subtitle">Owner, Marketing specialist, Manager at "Bar Simple".</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Resume Section-->
+<section class="section" id="resume">
+    <div class="container">
+        <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="mt-2">
+                            <h4>Expertise</h4>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="title text-danger">2019 - 2022</h6>
+                        <P>Digital Marketing Specialist</P>
+                        <P class="subtitle">Marketing specialist in Advance Academy, Dnesplus.bg - media, Corso Italy
+                            LTD. I do everything in the field of marketing - branding, social media, paid campaigns,
+                            writing content for radio advertising or otherwise, researching billboard positions.
+                            Direct work with programmers, web designers and external contractors.
+                            Market research and business development proposals.
+                        </P>
+                        <hr>
+                        <h6 class="title text-danger">2018 - 2019</h6>
+                        <P>Team Manager</P>
+                        <P class="subtitle">As a regional sales manager for the city of Varna and the district, my main
+                            duties were to monitor the achievement of the set results, timely reports and meetings with
+                            clients.</P>
+                        <hr>
+                        <h6 class="title text-danger">2015 - 2018</h6>
+                        <P>Small business owner</P>
+                        <P class="subtitle">Owner, manager and marketing specialist at "Bar Simple" - Varna.
+                            Complete business building from scratch. Business positioning, strategy, interior design,
+                            training and recruitment, communication with counterparties, etc.
+                            This venture of mine gave me a great foundation and experience.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="mt-2">
+                            <h4>Education</h4>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="title text-danger">2021 - 2022</h6>
+                        <P>Software Engineering with Python</P>
+                        <P class="subtitle">I graduated with absolute honors in 4 courses from the Software Engineering
+                            program with Python at SoftUni.
+                            I started with Python Basics, Python Fundamentals, Python Agents & OOP, Python Web Basics &
+                            Python Web Framework - Django.
+                        <div>I've been studying programming since September 2021 and I'm looking to expand my knowledge
+                            through the official documentation, proven examples, additional videos and courses.
+                        </div>
+                        </P>
+                        <hr>
+                        <h6 class="title text-danger">2019</h6>
+                        <P>Digital Marketing</P>
+                        <P class="subtitle">I completed the full Digital Marketing program of the Advance Academy with
+                            the highest success.</P>
+                        <hr>
+                        <h6 class="title text-danger">2010 - 2014</h6>
+                        <P>Bachelor's degree, Management</P>
+                        <P class="subtitle">University of Economics - Varna</P>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="pull-left">
+                            <h4 class="mt-2">Skills</h4>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="card-body pb-2">
+                        <h6>Python</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Django</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>HTML5 | CSS | Bootstrap</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 86%" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>PostgreSQL</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Heroku</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="75"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Shopify</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="75"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Git & Github</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <div class="pull-left">
+                            <h4 class="mt-2">Languages</h4>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="card-body pb-2">
+                        <h6>English</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Spanish</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="50"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>Bulgarian</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+                                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-dark text-center">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3">
+                <div class="row ">
+                    <div class="col-5 text-right text-light border-right py-3">
+                        <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                    </div>
+                    <div class="col-7 text-left py-3">
+                        <h1 class="text-danger font-weight-bold font40">800</h1>
+                        <p class="text-light mb-1">Hours Learn Python</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <div class="col-5 text-right text-light border-right py-3">
+                        <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                    </div>
+                    <div class="col-7 text-left py-3">
+                        <h1 class="text-danger font-weight-bold font40">2</h1>
+                        <p class="text-light mb-1">Django Project</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <div class="col-5 text-right text-light border-right py-3">
+                        <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                    </div>
+                    <div class="col-7 text-left py-3">
+                        <h1 class="text-danger font-weight-bold font40">7</h1>
+                        <p class="text-light mb-1">Completed Training</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <div class="col-5 text-right text-light border-right py-3">
+                        <div class="m-auto"><i class="ti-heart icon-xl"></i></div>
+                    </div>
+                    <div class="col-7 text-left py-3">
+                        <h1 class="text-danger font-weight-bold font40">12y</h1>
+                        <p class="text-light mb-1">Working Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="service">
+    <div class="container">
+        <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Skills</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                    <div class="card-header has-icon">
+                        <i class="ti-vector text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Python & Django</h5>
+                        <P class="subtitle">I completed my software engineering with python December 2022.
+                            During the training period (1 year and 4 months) I developed serious knowledge in Python
+                            programming, functional programming knowledge and OOP.
+                            I try to spend between 4-6 hours programming each day whenever possible.
+                            I'm good at finding the information I need when I need it.
+                            I'm learning the Django framework and feel confident using it.
+                        <div>I realize that the knowledge in this field is vast and there is much to learn.
+                            I hope that I will get into a team that will build my knowledge and develop in Python
+                            programming.
+                        </div>
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                    <div class="card-header has-icon">
+                        <i class="ti-write text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Front-end</h5>
+                        <P class="subtitle">I love seeing the product created, and using HTML, CSS and Bootstrap can
+                            develop creativity and problem solving skills. As a field that is constantly evolving to
+                            incorporate new technologies, front-end development rewards me by being able to learn new
+                            things and challenge me differently than back-end development.
+                        <div>Other software and technologies I work with are:</div>
+                        <li>Radishes</li>
+                        <li>Git</li>
+                        <li>Postgres</li>
+                        <li>Shopify</li>
+                        </P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                    <div class="card-header has-icon">
+                        <i class="ti-comments text-danger" aria-hidden="true"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Soft skills</h5>
+                        <P class="subtitle">
+
+                            I'm a real fan of friendly, precise communication, accuracy and getting great results.
+                            I am an ambitious and hardworking lady, so I am open to new professional opportunities in a
+                            team that loves teamwork and is friendly to Junior Developers.
+                        <p>Working with deadlines is not a problem for me.
+                        Prefer flexible working conditions and working hours, because I think that a person is most
+                        productive when he likes his work, not when he accepts it as a burdensome obligation.</p>
+
+
+                       <div style="text-decoration: underline;">“Clients do not come first. Employees come first. If you take care of your employees, they
+                            will take care of the clients.”
+                            -Sir Richard Branson
+                        </div>
+                        </P>
+                    </div>
+                </div>
+            </div>
+            {#                <div class="col-md-4 col-sm-6">#}
+            {#                    <div class="card mb-5">#}
+            {#                       <div class="card-header has-icon">#}
+            {#                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>#}
+            {#                        </div>#}
+            {#                        <div class="card-body px-4 py-3">#}
+            {#                            <h5 class="mb-3 card-title text-dark">Provident</h5>#}
+            {#                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>#}
+            {#                        </div>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#                <div class="col-md-4 col-sm-6">#}
+            {#                    <div class="card mb-5">#}
+            {#                       <div class="card-header has-icon">#}
+            {#                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>#}
+            {#                        </div>#}
+            {#                        <div class="card-body px-4 py-3">#}
+            {#                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>#}
+            {#                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>#}
+            {#                        </div>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#                <div class="col-md-4 col-sm-6">#}
+            {#                    <div class="card mb-5">#}
+            {#                       <div class="card-header has-icon">#}
+            {#                            <i class="ti-support text-danger" aria-hidden="true"></i>#}
+            {#                        </div>#}
+            {#                        <div class="card-body px-4 py-3">#}
+            {#                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>#}
+            {#                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>#}
+            {#                        </div>#}
+            {#                    </div>#}
+            {#                </div>#}
+        </div>
+    </div>
+</section>
+
+{#    <section class="section bg-custom-gray" id="price">#}
+{#        <div class="container">#}
+{#            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>#}
+{#            <div class="row align-items-center">#}
+{#                <div class="col-md-6 col-lg-3">#}
+{#                    <div class="price-card text-center mb-4">#}
+{#                        <h3 class="price-card-title">Free</h3>#}
+{#                        <div class="price-card-cost">#}
+{#                            <sup class="ti-money"></sup>#}
+{#                            <span class="num">0</span>#}
+{#                            <span class="date">MO</span>#}
+{#                        </div>#}
+{#                        <ul class="list">#}
+{#                            <li class="list-item">5 <span class="text-muted">Project</span></li>#}
+{#                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>#}
+{#                            <li class="list-item"><span class="text-muted">No Domain</span></li>#}
+{#                            <li class="list-item">1 <span class="text-muted">User</span></li>#}
+{#                        </ul>#}
+{#                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-3">#}
+{#                    <div class="price-card text-center mb-4">#}
+{#                        <h3 class="price-card-title">Basic</h3>#}
+{#                        <div class="price-card-cost">#}
+{#                            <sup class="ti-money"></sup>#}
+{#                            <span class="num">10</span>#}
+{#                            <span class="date">MO</span>#}
+{#                        </div>#}
+{#                        <ul class="list">#}
+{#                            <li class="list-item">50 <span class="text-muted">Project</span></li>#}
+{#                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>#}
+{#                            <li class="list-item">1<span class="text-muted">Domain</span></li>#}
+{#                            <li class="list-item">5 <span class="text-muted">User</span></li>#}
+{#                        </ul>#}
+{#                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-3">#}
+{#                    <div class="price-card text-center price-card-requried mb-4">#}
+{#                        <h3 class="price-card-title">Exclusive</h3>#}
+{#                        <div class="price-card-cost">#}
+{#                            <sup class="ti-money"></sup>#}
+{#                            <span class="num">25</span>#}
+{#                            <span class="date">MO</span>#}
+{#                        </div>#}
+{#                        <ul class="list">#}
+{#                            <li class="list-item">150 <span class="text-muted">Project</span></li>#}
+{#                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>#}
+{#                            <li class="list-item">5<span class="text-muted"> Domain</span></li>#}
+{#                            <li class="list-item">15<span class="text-muted">User</span></li>#}
+{#                        </ul>#}
+{#                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-6 col-lg-3">#}
+{#                    <div class="price-card text-center mb-4">#}
+{#                        <h3 class="price-card-title">Pro</h3>#}
+{#                        <div class="price-card-cost">#}
+{#                            <sup class="ti-money"></sup>#}
+{#                            <span class="num">99</span>#}
+{#                            <span class="date">MO</span>#}
+{#                        </div>#}
+{#                        <ul class="list">#}
+{#                            <li class="list-item">500 <span class="text-muted">Project</span></li>#}
+{#                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>#}
+{#                            <li class="list-item">10<span class="text-muted"> Domain</span></li>#}
+{#                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>#}
+{#                        </ul>#}
+{#                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
+<section class="section bg-dark py-5">
+    <div class="container text-center">
+        <h2 class="text-light mb-5 font-weight-normal">I Am Available For Python Developer</h2>
+         <a href="#contact" class="btn bg-primary w-lg">Hire me</a>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="section bg-custom-gray" id="portfolio">
+    <div class="container">
+        <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+        <div class="portfolio">
+            <div class="filters">
+                <a href="#" data-filter=".new" class="active">
+                    BMSystem
+                </a>
+                <a href="#" data-filter=".advertising">
+                    Beauty
+                </a>
+                <a href="#" data-filter=".branding">
+                    Management
+                </a>
+                <a href="#" data-filter=".web">
+                    System
+                </a>
+            </div>
+            <div class="portfolio-container">
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/BMSView.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/BMSView.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Beauty Management System for all types of beauty businesses!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/Bms-no permision.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/Bms-no permision.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">PERMISSION RESTRICTED</h6>
+                                <p class="subtitle">Only owner can give permissions for new users!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/Bmsystrem - Login.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/Bmsystrem - Login.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">EASY LOGIN</h6>
+                                <p class="subtitle">Users sign in only with email and password!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/Bmsystem - Owner2.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/Bmsystem - Owner2.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">STRUCTURED INFORMATION</h6>
+                                <p class="subtitle">You can see all the activities in your beauty salon!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 advertising">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/BMSystem - Owner1.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/BMSystem - Owner1.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">SEARCH BAR</h6>
+                                <p class="subtitle">Search customers fast and easy only by their names!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/Screenshot 2023-01-06 095746.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/Screenshot 2023-01-06 095746.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">NO NEED TO REMEMBER</h6>
+                                <p class="subtitle">Collect all the results of your customers!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/BMSystem - Owner3.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/BMSystem - Owner3.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">STRUCTURED MENUS</h6>
+                                <p class="subtitle">Ordered and easy for use drop-down menus!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/Screenshot 2023-01-06 095826.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/Screenshot 2023-01-06 095826.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADD PRODUCTS</h6>
+                                <p class="subtitle">Keep the information for products!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/clients.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/clients.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ALL PROCEDURES</h6>
+                                <p class="subtitle">See all client procedures sorted!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/book procedure.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/book procedure.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BOOK PROCEDURE</h6>
+                                <p class="subtitle">Easy date picker for customer procedures!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/BMSystem - Owner4.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/BMSystem - Owner4.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">MORE THAN ONE</h6>
+                                <p class="subtitle">Add more than one beauty specialist to your client profile!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/Admin.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/Admin.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADMIN SITE</h6>
+                                <p class="subtitle">Control all the information from admin site too!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="{% static '/imges/Admin2.png' %}" class="img-fluid"
+                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="{% static '/imges/Admin2.png' %}"></a>
+                            <div class="text-holder">
+                                <h6 class="title">SEARCH IN DATA</h6>
+                                <p class="subtitle">Easy way to find all the information that you need!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of portfolio section -->
+
+<section class="section" id="blog">
+    <div class="container">
+        <h2 class="mb-5">Project <span class="text-danger">Review</span></h2>
+        <div class="row">
+            <div class="blog-card">
+                <div class="img-holder">
+                    <img src="{% static '/imges/BMSystem - Owner1.png' %}"
+                         alt="BMS system login page">
+                </div>
+                <div class="content-holder">
+                    <h6 class="title">Beauty Salons Management System</h6>
+
+                    <p class="post-details">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-eye text-danger"></i>{{ number_of_views }} view/s.</a>
+{#                        <a href="#"><i class="ti-comment"></i> 123</a>#}
+                    </p>
+
+                    <p>Beauty Management System (BMSystem) is a project that can provide solutions for all the beauty types of business
+
+like hairdressers - salons; cosmetic studios, make-up artists, etc.
+It can be personalized by the business needs.
+In this project example I do it for a hairdresser salon.
+The BMSystem is open for use by owners and their employees, not for customers.
+System has a database which is provides storing all the information about procedures, and client profiles - type hair, hair color, hair length, skin type, and else.</p>
+
+                    <p><b>To test like a manager, email: reni@test.bg / pass: reni123456.</b></p>
+                    <p><b>To test like a staff, email: test-staff@testmail.com / pass: staff123456.</b></p>
+                    <p>To use the system it needs to make a registration for the owner (make it a superuser from the admin site), and the employees.
+There can be different permission groups. In this example - two group types - 'Managers' and 'Staff group' (Excluding superuser);
+There is an option to have a product side, which means you can have a collection with products that your Beauty business use. This is an easy way to inform your employees and connect the products with procedures</p>
+
+                    <a href="https://beauty-management-system.herokuapp.com/" class="read-more">View project <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div><!-- end of blog wrapper -->
+{##}
+{#            <!-- blog-card -->#}
+{#            <div class="blog-card">#}
+{#                <div class="img-holder">#}
+{#                    <img src="{% static '/imgs/blog2.jpg' %}"#}
+{#                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">#}
+{#                </div>#}
+{#                <div class="content-holder">#}
+{#                    <h6 class="title">Explicabo illo</h6>#}
+{##}
+{#                    <p class="post-details">#}
+{#                        <a href="#">By: Admin</a>#}
+{#                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>#}
+{#                        <a href="#"><i class="ti-comment"></i> 264</a>#}
+{#                    </p>#}
+{##}
+{#                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae#}
+{#                        ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam#}
+{#                        vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis#}
+{#                        praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias#}
+{#                        excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at#}
+{#                        perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta#}
+{#                        distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>#}
+{##}
+{#                    <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>#}
+{#                </div>#}
+{#            </div><!-- end of blog wrapper -->#}
+{#            <!-- blog-card -->#}
+{#            <div class="blog-card">#}
+{#                <div class="img-holder">#}
+{#                    <img src="{% static '/imgs/blog3.jpg' %}"#}
+{#                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">#}
+{#                </div>#}
+{#                <div class="content-holder">#}
+{#                    <h4 class="title">Porro Quisqua</h4>#}
+{##}
+{#                    <p class="post-details">#}
+{#                        <a href="#">By: Admin</a>#}
+{#                        <a href="#"><i class="ti-heart text-danger"></i> 431</a>#}
+{#                        <a href="#"><i class="ti-comment"></i> 312</a>#}
+{#                    </p>#}
+{##}
+{#                    <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto#}
+{#                        consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid,#}
+{#                        minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit#}
+{#                        adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus.#}
+{#                        Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate#}
+{#                        reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt.#}
+{#                        Ipsum, rem.</p>#}
+{##}
+{#                    <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>#}
+{#                </div>#}
+{#            </div><!-- end of blog wrapper -->#}
+
+        </div>
+    </div>
+</section>
+
+<div class="section contact" id="contact">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23264.07243829978!2d27.894496154124194!3d43.20929941487894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a454751e94eedb%3A0x57ee9fb8a5ea89be!2z0JLQsNGA0L3QsCDQptC10L3RgtGK0YAsINCS0LDRgNC90LA!5e0!3m2!1sbg!2sbg!4v1672829628433!5m2!1sbg!2sbg"
+                width=100% height=100% style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="contact-form-card" style="border: 1px solid black;">
+                    <h4 class="contact-title">Send a message</h4>
+
+                    {# form - sending message #}
+                    <form action="" method="post">
+                         {% csrf_token %}
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="full-name" placeholder="Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="email" placeholder="Email *" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" type="text" name="message" placeholder="Message *" rows="7" required></textarea>
+                        </div>
+                        <div class="form-group ">
+                            <button type="submit" class="form-control btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                    {# end form #}
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-info-card" style="border: 1px solid black;">
+                    <h4 class="contact-title">Get in touch</h4>
+                    <div class="row mb-2">
+                        <div class="col-1 pt-1 mr-1">
+                            <i class="ti-mobile icon-md"></i>
+                        </div>
+                        <div class="col-10 ">
+                            <h6 class="d-inline">Phone : <br> <span class="text-muted">+359 898 44 30 64</span></h6>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-1 pt-1 mr-1">
+                            <i class="ti-map-alt icon-md"></i>
+                        </div>
+                        <div class="col-10">
+                            <h6 class="d-inline">Address :<br> <span class="text-muted">Varna, Bulgaria</span></h6>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-1 pt-1 mr-1">
+                            <i class="ti-email icon-md"></i>
+                        </div>
+                        <div class="col-10">
+                            <h6 class="d-inline">Email :<br> <span class="text-muted">reni91boyanova@gmail.com</span></h6>
+                        </div>
+                    </div>
+                    <ul class="social-icons pt-4">
+                        </li>
+                        <li class="social-item"><a class="social-link text-dark" href="tel:+359898443064"><i class="ti-mobile"
+                                                                                             aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social-item"><a class="social-link text-dark" href="mailto: reni91boyanova@gmail.com"><i class="ti-email"
+                                                                                             aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/reni-boyanova-a8763b253/"><i class="ti-linkedin"
+                                                                                             aria-hidden="true"></i></a>
+                        </li>
+                        <li class="social-item"><a class="social-link text-dark" href="https://github.com/reniboyanova"><i class="ti-github"
+                                                                                             aria-hidden="true"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer class="footer py-3">
+    <div class="container">
+        <p class="small mb-0 text-light">
+            &copy;
+            <script>document.write(new Date().getFullYear())</script>
+            Created With <i class="ti-heart text-danger"></i> By <a href="#" target="_blank"><span
+                class="text-danger" title="Bootstrap 4 Themes and Dashboards">Reny Boyanova</span></a>
+        </p>
+    </div>
+</footer>
+
+<!-- core  -->
+<script src="{% static '/vendors/jquery/jquery-3.4.1.js' %}"></script>
+<script src="{% static '/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+<!-- bootstrap 3 affix -->
+<script src="{% static '/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+<!-- Isotope  -->
+<script src="{% static '/vendors/isotope/isotope.pkgd.js' %}"></script>
+
+<!-- Google mpas -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+<!-- JohnDoe js -->
+<script src="{% static '/js/johndoe.js' %}"></script>
+
+</body>
+</html>
