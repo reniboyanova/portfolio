@@ -7,6 +7,7 @@ import os
 
 
 def index_view(request):
+
     if request.method == 'POST':
         name = request.POST.get('full-name')
         email = request.POST.get('email')
@@ -26,10 +27,13 @@ def index_view(request):
         send_mail(subject, message, '', ['reni91boyanova@gmail.com'])
         return redirect('index page')
     else:
-        request.session['view_counter'] += 1
+        try:
+            request.session['num'] += 1
+        except KeyError:
+            request.session['num'] = 1
 
     context = {
-        'number_of_views': request.session['view_counter']
+        'number_of_views': request.session['num']
     }
 
     return render(request, 'index.html', context)
