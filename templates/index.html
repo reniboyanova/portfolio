@@ -1,5 +1,5 @@
 {% load static %}
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static '/css/johndoe.css' %}">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-{#<a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i#}
+{#<a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i>#}
 {#        class="ti-shift-left-alt"></i> Components</a>#}
 <header class="header">
     <div class="container">
@@ -35,7 +35,7 @@
         <div class="header-content">
             <h4 class="header-subtitle">Hello, I am</h4>
             <h1 class="header-title">Reni Boyanova</h1>
-            <h6 class="header-mono">Python Developer | Front end & Back end</h6>
+            <h6 class="header-mono">Looking for opportunities with | Python & C/C++</h6>
             <a href="{% url 'download resume' %}"><button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Download Resume</button></a>
         </div>
     </div>
@@ -63,7 +63,7 @@
                 <img src="{% static '/imgs/avatar1.jpg' %}" alt="" class="brand-img">
                 <li class="brand-txt">
                     <h5 class="brand-title">Reni Boyanova</h5>
-                    <div class="brand-subtitle">Python Developer | Front end & Back end</div>
+                    <div class="brand-subtitle">Looking for junior developer with | Python & C++</div>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto">
@@ -85,7 +85,7 @@
         <div class="col-lg-4 about-card">
             <h3 class="font-weight-light">Who am I ?</h3>
             <span class="line mb-5"></span>
-            <h5 class="mb-3">A Python Web Developer / Purposeful person</h5>
+            <h5 class="mb-3">Purposeful person</h5>
             <p class="mt-20">I am a person who likes to constantly learn new things and develop. Challenges don't weigh
                 me down.
                 I know how to get along easily in the team I work in, as well as manage a team of people when needed.
@@ -193,6 +193,13 @@
                         </div>
                     </div>
                     <div class="card-body">
+                        <h6 class="title text-danger">04.2023 - 10.2023</h6>
+                        <P>Training for a Junior Developer with C++, Python, Linux, and Basic BASH - Code Academy & Strypes</P>
+                        <P class="subtitle">A highly intensive course that solidified my knowledge of Python and opened doors to a
+                            plethora of new concepts in C and C++. Thanks to the multitude of tasks, mentorship, and in-depth assignments, I was able to
+                            elevate my proficiency both theoretically and practically. I acquired a solid foundation in C++,
+                            CMake, and Object-Oriented Programming (OOP).
+                        </P>
                         <h6 class="title text-danger">2021 - 2022</h6>
                         <P>Software Engineering with Python</P>
                         <P class="subtitle">I graduated with absolute honors in 4 courses from the Software Engineering
@@ -228,6 +235,16 @@
                         <h6>Python</h6>
                         <div class="progress mb-3">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>C/C++</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25"
+                                 aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <h6>CMake</h6>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25"
                                  aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <h6>Django</h6>
@@ -275,11 +292,6 @@
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25"
                                  aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <h6>Spanish</h6>
-                        <div class="progress mb-3">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="50"
-                                 aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
                         <h6>Bulgarian</h6>
                         <div class="progress mb-3">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
@@ -301,8 +313,8 @@
                         <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
                     </div>
                     <div class="col-7 text-left py-3">
-                        <h1 class="text-danger font-weight-bold font40">800</h1>
-                        <p class="text-light mb-1">Hours Learn Python</p>
+                        <h1 class="text-danger font-weight-bold font40">1500+</h1>
+                        <p class="text-light mb-1">Hours Learn Python and C++</p>
                     </div>
                 </div>
             </div>
@@ -312,8 +324,8 @@
                         <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
                     </div>
                     <div class="col-7 text-left py-3">
-                        <h1 class="text-danger font-weight-bold font40">2</h1>
-                        <p class="text-light mb-1">Django Project</p>
+                        <h1 class="text-danger font-weight-bold font40">7</h1>
+                        <p class="text-light mb-1">Project</p>
                     </div>
                 </div>
             </div>
@@ -346,7 +358,7 @@
 <section class="section" id="service">
     <div class="container">
         <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Skills</h2>
-        <div class="row">
+        <div class="row d-flex flex-row">
             <div class="col-md-4 col-sm-6">
                 <div class="card mb-5">
                     <div class="card-header has-icon">
@@ -374,17 +386,16 @@
                         <i class="ti-write text-danger" aria-hidden="true"></i>
                     </div>
                     <div class="card-body px-4 py-3">
-                        <h5 class="mb-3 card-title text-dark">Front-end</h5>
-                        <P class="subtitle">I love seeing the product created, and using HTML, CSS and Bootstrap can
-                            develop creativity and problem solving skills. As a field that is constantly evolving to
-                            incorporate new technologies, front-end development rewards me by being able to learn new
-                            things and challenge me differently than back-end development.
-                        <div>Other software and technologies I work with are:</div>
-                        <li>Radishes</li>
-                        <li>Git</li>
-                        <li>Postgres</li>
-                        <li>Shopify</li>
-                        </P>
+                        <h5 class="mb-3 card-title text-dark">C/C++</h5>
+                        <P class="subtitle">4 months of intensive C++ coursework, which included practical work such as
+                            homework assignments, tasks, projects, code reviews, and more, as well as theoretical lectures.
+                            This program has ignited a strong desire in me to deepen my knowledge
+                            in the field of C++ programming. I have come to understand how vast this programming
+                            language truly is. I have tackled over 500 different tasks, completed 4 projects,
+                            and engaged in numerous live coding sessions. Collaborating with various groups has proven
+                            to be highly beneficial, and reading and analyzing others' code has been one of
+                            the most valuable practices throughout my learning journey.
+                    </div>
                     </div>
                 </div>
             </div>
@@ -413,121 +424,13 @@
                     </div>
                 </div>
             </div>
-            {#                <div class="col-md-4 col-sm-6">#}
-            {#                    <div class="card mb-5">#}
-            {#                       <div class="card-header has-icon">#}
-            {#                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>#}
-            {#                        </div>#}
-            {#                        <div class="card-body px-4 py-3">#}
-            {#                            <h5 class="mb-3 card-title text-dark">Provident</h5>#}
-            {#                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>#}
-            {#                        </div>#}
-            {#                    </div>#}
-            {#                </div>#}
-            {#                <div class="col-md-4 col-sm-6">#}
-            {#                    <div class="card mb-5">#}
-            {#                       <div class="card-header has-icon">#}
-            {#                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>#}
-            {#                        </div>#}
-            {#                        <div class="card-body px-4 py-3">#}
-            {#                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>#}
-            {#                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>#}
-            {#                        </div>#}
-            {#                    </div>#}
-            {#                </div>#}
-            {#                <div class="col-md-4 col-sm-6">#}
-            {#                    <div class="card mb-5">#}
-            {#                       <div class="card-header has-icon">#}
-            {#                            <i class="ti-support text-danger" aria-hidden="true"></i>#}
-            {#                        </div>#}
-            {#                        <div class="card-body px-4 py-3">#}
-            {#                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>#}
-            {#                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>#}
-            {#                        </div>#}
-            {#                    </div>#}
-            {#                </div>#}
+
         </div>
-    </div>
 </section>
 
-{#    <section class="section bg-custom-gray" id="price">#}
-{#        <div class="container">#}
-{#            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>#}
-{#            <div class="row align-items-center">#}
-{#                <div class="col-md-6 col-lg-3">#}
-{#                    <div class="price-card text-center mb-4">#}
-{#                        <h3 class="price-card-title">Free</h3>#}
-{#                        <div class="price-card-cost">#}
-{#                            <sup class="ti-money"></sup>#}
-{#                            <span class="num">0</span>#}
-{#                            <span class="date">MO</span>#}
-{#                        </div>#}
-{#                        <ul class="list">#}
-{#                            <li class="list-item">5 <span class="text-muted">Project</span></li>#}
-{#                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>#}
-{#                            <li class="list-item"><span class="text-muted">No Domain</span></li>#}
-{#                            <li class="list-item">1 <span class="text-muted">User</span></li>#}
-{#                        </ul>#}
-{#                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-md-6 col-lg-3">#}
-{#                    <div class="price-card text-center mb-4">#}
-{#                        <h3 class="price-card-title">Basic</h3>#}
-{#                        <div class="price-card-cost">#}
-{#                            <sup class="ti-money"></sup>#}
-{#                            <span class="num">10</span>#}
-{#                            <span class="date">MO</span>#}
-{#                        </div>#}
-{#                        <ul class="list">#}
-{#                            <li class="list-item">50 <span class="text-muted">Project</span></li>#}
-{#                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>#}
-{#                            <li class="list-item">1<span class="text-muted">Domain</span></li>#}
-{#                            <li class="list-item">5 <span class="text-muted">User</span></li>#}
-{#                        </ul>#}
-{#                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-md-6 col-lg-3">#}
-{#                    <div class="price-card text-center price-card-requried mb-4">#}
-{#                        <h3 class="price-card-title">Exclusive</h3>#}
-{#                        <div class="price-card-cost">#}
-{#                            <sup class="ti-money"></sup>#}
-{#                            <span class="num">25</span>#}
-{#                            <span class="date">MO</span>#}
-{#                        </div>#}
-{#                        <ul class="list">#}
-{#                            <li class="list-item">150 <span class="text-muted">Project</span></li>#}
-{#                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>#}
-{#                            <li class="list-item">5<span class="text-muted"> Domain</span></li>#}
-{#                            <li class="list-item">15<span class="text-muted">User</span></li>#}
-{#                        </ul>#}
-{#                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col-md-6 col-lg-3">#}
-{#                    <div class="price-card text-center mb-4">#}
-{#                        <h3 class="price-card-title">Pro</h3>#}
-{#                        <div class="price-card-cost">#}
-{#                            <sup class="ti-money"></sup>#}
-{#                            <span class="num">99</span>#}
-{#                            <span class="date">MO</span>#}
-{#                        </div>#}
-{#                        <ul class="list">#}
-{#                            <li class="list-item">500 <span class="text-muted">Project</span></li>#}
-{#                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>#}
-{#                            <li class="list-item">10<span class="text-muted"> Domain</span></li>#}
-{#                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>#}
-{#                        </ul>#}
-{#                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </section>#}
 <section class="section bg-dark py-5">
     <div class="container text-center">
-        <h2 class="text-light mb-5 font-weight-normal">I Am Available For Python Developer</h2>
+        <h2 class="text-light mb-5 font-weight-normal">I Am Available For Python and C++ Junior Developer</h2>
          <a href="#contact" class="btn bg-primary w-lg">Hire me</a>
     </div>
 </section>
